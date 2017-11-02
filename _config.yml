@@ -1,6 +1,6 @@
 # Site settings
 title: EntwickelBar
-email: your-email@domain.com
+email: bendisposto@cs.uni-duesseldorf.de
 description: > # this means to ignore newlines until "baseurl:"
   EntwickelBar ist eine Unconference, die nach der Open Space Methode
   organisiert und moderiert wird. Anstatt ein Programm vorher fest zu
@@ -8,7 +8,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Inhaltlich wollen wir auf alle Themen konzentrieren, die irgendwas mit der
   Software Entwicklung zu tun haben.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "https://entwickelbar.github.io/" # the base hostname & protocol for your site
 twitter_username:
 github_username: EntwickelBar
 
