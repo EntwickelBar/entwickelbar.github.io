@@ -8,7 +8,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Inhaltlich wollen wir auf alle Themen konzentrieren, die irgendwas mit der
   Software Entwicklung zu tun haben.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://entwickelbar.github.io/" # the base hostname & protocol for your site
+url: "https://entwickelbar.github.io" # the base hostname & protocol for your site
 twitter_username:
 github_username: EntwickelBar
 
