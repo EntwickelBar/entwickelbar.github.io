@@ -3,7 +3,7 @@
      alt="EntwickelBar Maskottchen">
 
 <h4>Wann?</h4>
-<p>Die nächste EntwickelBar kommt am <strong>24.11.2018</strong></p>
+<p>Die nächste EntwickelBar kommt <span id="nextDateText">am <strong id="nextDate"></strong></span></p>
 
 
 <table style="margin: auto">
@@ -23,7 +23,7 @@
 </table>
 
 
-<!--<a class="btn btn-lg btn-link" href="https://www.meetup.com/de-DE/rheinJUG/events/248885154/">Anmeldung</a> -->
+<a id="anmeldung" class="btn btn-lg btn-link" href="https://www.meetup.com/de-DE/rheinJUG/events/255300471/">Anmeldung</a>
 
 <hr>
 
@@ -90,23 +90,41 @@
 
 
 <script>
-    var countDownDate = new Date("Nov 24, 2018 09:30:00").getTime();
+    var countDownDate = new Date("Nov 24, 2018 09:30:00");
+    var countDownDate2 = new Date("May 18, 2019 09:30:00");
+
 
     function pad(num) {
         var s = "00" + num;
         return s.substr(s.length - 2);
     }
 
+    var nowDate = new Date();
+    if (nowDate > countDownDate && nowDate > countDownDate2) {
+      document.getElementById("nextDateText").innerHTML = "bald"
+      document.getElementById("anmeldung").remove();
+    }
+    else if (nowDate > countDownDate ) {
+      document.getElementById("nextDate").innerHTML = countDownDate2.toLocaleDateString("de-DE");
+      document.getElementById("anmeldung").remove();
+    }
+    else {
+      document.getElementById("nextDate").innerHTML = countDownDate.toLocaleDateString("de-DE");
+    }
+
 
     var x = setInterval(function () {
         var now = new Date().getTime();
-        var distance = countDownDate - now;
+        var distance = countDownDate.getTime() - now;
+        if (distance < 0) {
+            var distance = countDownDate2.getTime() - now;
+        }
         if (distance < 0) {
             clearInterval(x);
-            document.getElementById("clock_tage").innerHTML = 0;
-            document.getElementById("clock_stunden").innerHTML = 0;
-            document.getElementById("clock_minuten").innerHTML = 0;
-            document.getElementById("clock_sekunden").innerHTML = 0;
+            document.getElementById("clock_tage").innerHTML = "--";
+            document.getElementById("clock_stunden").innerHTML = "--";
+            document.getElementById("clock_minuten").innerHTML = "--";
+            document.getElementById("clock_sekunden").innerHTML = "--";
         }
         else {
             var days = Math.floor(distance / (1000 * 60 * 60 * 24));
