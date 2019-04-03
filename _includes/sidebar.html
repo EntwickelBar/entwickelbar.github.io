@@ -1,94 +1,95 @@
-<img class="mascot"
-     src="/img/laptop.png"
-     alt="EntwickelBar Maskottchen">
+<img alt="EntwickelBar Maskottchen"
+     class="mascot"
+     src="/img/laptop.png">
 
 <h4>Wann?</h4>
 <p>Die nächste EntwickelBar kommt <span id="nextDateText">am <strong id="nextDate"></strong></span></p>
 
-<p>    <a id="anmeldung" href="https://www.meetup.com/de-DE/rheinJUG/events/255300471/" class="btn btn-primary btn-sm" style="white-space:normal !important">
-      Anmeldung über Meetup
-    </a>
+<p><a class="btn btn-primary btn-sm" href="https://www.meetup.com/de-DE/rheinJUG/events/255300471/" id="anmeldung"
+      style="white-space:normal !important">
+  Anmeldung über Meetup
+</a>
 </p>
 
 <table style="margin: auto">
-    <tr class="clock_times">
-        <td id="clock_tage">--</td>
-        <td id="clock_stunden">--</td>
-        <td id="clock_minuten">--</td>
-        <td id="clock_sekunden">--
-        </td>
-    </tr>
-    <tr class="clock_names">
-        <td>Tage</td>
-        <td>Std.</td>
-        <td>Min.</td>
-        <td>Sek.</td>
-    </tr>
+  <tr class="clock_times">
+    <td id="clock_tage">--</td>
+    <td id="clock_stunden">--</td>
+    <td id="clock_minuten">--</td>
+    <td id="clock_sekunden">--
+    </td>
+  </tr>
+  <tr class="clock_names">
+    <td>Tage</td>
+    <td>Std.</td>
+    <td>Min.</td>
+    <td>Sek.</td>
+  </tr>
 </table>
-
 
 
 <hr>
 
 <h4>Wo?</h4>
 <p>
-    Heinrich-Heine-Universität<br>
-    Gebäude 25<br>
-    Universitätsstr. 1<br>
-    40225 Düsseldorf<br>
-    <a class="btn btn-lg btn-link" href="wegbeschreibung.html">Wegbeschreibung</a>
-    <a class="btn btn-lg btn-link"
-       href="https://www.google.de/maps/dir//51.1885533,6.7963252/@51.1884147,6.7967137,19.58z">Karte in Google anzeigen</a>
+  Heinrich-Heine-Universität<br>
+  Gebäude 25<br>
+  Universitätsstr. 1<br>
+  40225 Düsseldorf<br>
+  <a class="btn btn-lg btn-link" href="wegbeschreibung.html">Wegbeschreibung</a>
+  <a class="btn btn-lg btn-link"
+     href="https://www.google.de/maps/dir//51.1885533,6.7963252/@51.1884147,6.7967137,19.58z">Karte in Google
+    anzeigen</a>
 </p>
 
 <hr>
 
 <h4>
-    Vorherige Versionen
+  Vorherige Versionen
 </h4>
 
 <h5>
-    <a href="/2018/05">EntwickelBar 2.0</a>
+  <a href="/2.0">EntwickelBar 2.0</a>
 </h5>
 <p>
-    Die EntwickelBar 2.0 war schon ein wenig größer, viele spannende Themen sind zusammengekommen. Ein paar Bilder und
-    Texte <a href="/2018/05">findet ihr hier</a>.
+  Die EntwickelBar 2.0 war schon ein wenig größer, viele spannende Themen sind zusammengekommen. Ein paar Bilder und
+  Texte <a href="/2.0">findet ihr hier</a>.
 </p>
 <h5>
-    <a href="/2017">EntwickelBar 1.0</a>
+  <a href="/1.0">EntwickelBar 1.0</a>
 </h5>
 <p>
-    2017 hat die EntwickelBar zum ersten Mal stattgefunden. Einige Bilder und unsere
-    Agenda aus dem letzten Jahr <a href="/2017">findet ihr hier</a>.
+  2017 hat die EntwickelBar zum ersten Mal stattgefunden. Einige Bilder und unsere
+  Agenda aus dem letzten Jahr <a href="/1.0">findet ihr hier</a>.
 </p>
 
 <hr>
 
 <p>
-    <a href="https://twitter.com/EntwickelBar">
-        <img src="img/twitter.svg" alt="" style="width: 1em; margin-right: 0.3em;">EntwickelBar
-    </a>
+  <a href="https://twitter.com/EntwickelBar">
+    <img alt="" src="/img/twitter.svg" style="width: 1em; margin-right: 0.3em;">EntwickelBar
+  </a>
 </p>
 
 <p>
-    <a href="http://www.rheinjug.de/">
-        <img class="sponsoring-sidebar" src="img/sponsoring/RheinJUGLogo250.png" alt="">
-    </a>
+  <a href="http://www.rheinjug.de/">
+    <img alt="" class="sponsoring-sidebar" src="/img/sponsoring/rheinjug250.png">
+  </a>
 </p>
 <p>
-    <a href="https://www.innoq.com/de/">
-        <img class="sponsoring-sidebar" src="img/sponsoring/innoq.gif" alt="">
-    </a>
+  <a href="https://www.innoq.com/de/">
+    <img alt="" class="sponsoring-sidebar" src="/img/sponsoring/innoq.gif">
+  </a>
 </p>
 <p>
-    <a href="https://www.valtech.de/">
-        <img class="sponsoring-sidebar" src="img/sponsoring/valtech.png" alt="">
-    </a>
+  <a href="https://www.valtech.de/">
+    <img alt="" class="sponsoring-sidebar" src="/img/sponsoring/valtech.png">
+  </a>
 </p>
 <p>
-    <a href="http://hhu.de">
-        <img class="sponsoring-sidebar" src="img/sponsoring/unilogo.svg" alt="">
-    </a>
+  <a href="http://hhu.de">
+    <img alt="" class="sponsoring-sidebar" src="/img/sponsoring/unilogo.svg">
+  </a>
 </p>
 
 
@@ -104,15 +105,13 @@
 
     var nowDate = new Date();
     if (nowDate > countDownDate && nowDate > countDownDate2) {
-      document.getElementById("nextDateText").innerHTML = "bald"
-      document.getElementById("anmeldung").remove();
-    }
-    else if (nowDate > countDownDate ) {
-      document.getElementById("nextDate").innerHTML = countDownDate2.toLocaleDateString("de-DE");
-      document.getElementById("anmeldung").remove();
-    }
-    else {
-      document.getElementById("nextDate").innerHTML = countDownDate.toLocaleDateString("de-DE");
+        document.getElementById("nextDateText").innerHTML = "bald"
+        document.getElementById("anmeldung").remove();
+    } else if (nowDate > countDownDate) {
+        document.getElementById("nextDate").innerHTML = countDownDate2.toLocaleDateString("de-DE");
+        document.getElementById("anmeldung").remove();
+    } else {
+        document.getElementById("nextDate").innerHTML = countDownDate.toLocaleDateString("de-DE");
     }
 
 
@@ -128,8 +127,7 @@
             document.getElementById("clock_stunden").innerHTML = "--";
             document.getElementById("clock_minuten").innerHTML = "--";
             document.getElementById("clock_sekunden").innerHTML = "--";
-        }
-        else {
+        } else {
             var days = Math.floor(distance / (1000 * 60 * 60 * 24));
             var hours = pad(Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
             var minutes = pad(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)));
